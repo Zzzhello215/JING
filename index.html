@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f9e8ee">
+  <title>镜的房间</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="revisions.css">
+</head>
+<body>
+  <main id="app">
+    <section class="page page-home active" data-page="home" aria-label="首页">
+      <div class="dot-field"></div>
+      <button class="room-window" data-go="meet" aria-label="进入镜的房间">
+        <span class="browser-bar"><i></i><i></i><i></i><em>mirror-room.local</em></span>
+        <span class="snowflake-entry" aria-hidden="true">
+          <svg class="pixel-snowflake" viewBox="0 0 17 17" shape-rendering="crispEdges">
+            <g class="flake-main">
+              <rect x="8" y="0" width="1" height="17"/><rect x="0" y="8" width="17" height="1"/>
+              <rect x="2" y="2" width="1" height="1"/><rect x="3" y="3" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="5" y="5" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/><rect x="7" y="7" width="1" height="1"/>
+              <rect x="9" y="9" width="1" height="1"/><rect x="10" y="10" width="1" height="1"/><rect x="11" y="11" width="1" height="1"/><rect x="12" y="12" width="1" height="1"/><rect x="13" y="13" width="1" height="1"/><rect x="14" y="14" width="1" height="1"/>
+              <rect x="14" y="2" width="1" height="1"/><rect x="13" y="3" width="1" height="1"/><rect x="12" y="4" width="1" height="1"/><rect x="11" y="5" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/><rect x="9" y="7" width="1" height="1"/>
+              <rect x="7" y="9" width="1" height="1"/><rect x="6" y="10" width="1" height="1"/><rect x="5" y="11" width="1" height="1"/><rect x="4" y="12" width="1" height="1"/><rect x="3" y="13" width="1" height="1"/><rect x="2" y="14" width="1" height="1"/>
+              <rect x="6" y="2" width="1" height="3"/><rect x="10" y="2" width="1" height="3"/><rect x="6" y="12" width="1" height="3"/><rect x="10" y="12" width="1" height="3"/>
+              <rect x="2" y="6" width="3" height="1"/><rect x="2" y="10" width="3" height="1"/><rect x="12" y="6" width="3" height="1"/><rect x="12" y="10" width="3" height="1"/>
+            </g>
+            <g class="flake-light"><rect x="7" y="0" width="1" height="2"/><rect x="9" y="15" width="1" height="2"/><rect x="0" y="7" width="2" height="1"/><rect x="15" y="9" width="2" height="1"/><rect x="5" y="5" width="1" height="1"/><rect x="11" y="11" width="1" height="1"/><rect x="11" y="5" width="1" height="1"/><rect x="5" y="11" width="1" height="1"/></g>
+          </svg>
+          <small>点击</small>
+        </span>
+        <strong>JING's Room <small>☾</small></strong>
+        <span class="hint">— click anywhere to enter —</span>
+      </button>
+    </section>
+
+    <section class="page page-meet" data-page="meet" aria-label="第二页">
+      <div class="clouds" aria-hidden="true"><i></i><i></i><i></i></div>
+      <button class="nav-arrow back" data-go="home" aria-label="返回上一步">←</button>
+      <button class="nav-arrow next" data-go="profile" aria-label="前往下一页">→</button>
+      <div class="meet-wrap">
+        <div class="snow-cloud" aria-hidden="true"><span>☁</span><b>✦</b><b>✧</b><b>✦</b></div>
+        <h1>Nice to meet you</h1>
+        <button class="learn-more" data-go="profile">点击前往了解我</button>
+        <div class="weather-row" aria-label="天气卡片">
+          <button class="weather-card" data-weather="moon"><span>☾</span><small>晚安</small></button>
+          <button class="weather-card" data-weather="sun"><span>☀</span><small>晴天</small></button>
+          <button class="weather-card" data-weather="snow"><span>❄</span><small>初雪</small></button>
+        </div>
+        <div class="hour-card">
+          <button class="hour"><b>Now</b><span>🌅</span><em>22°</em></button>
+          <button class="hour"><b>7PM</b><span>☁️</span><em>22°</em></button>
+          <button class="hour"><b>8PM</b><span>🌧️</span><em>22°</em></button>
+          <button class="hour"><b>9PM</b><span>⛈️</span><em>22°</em></button>
+          <button class="hour"><b>10PM</b><span>🌙</span><em>22°</em></button>
+        </div>
+        <div class="pixel-pet" id="pixelPet" role="button" tabindex="0" aria-label="点击像素表情">
+          <span class="pet-face">• ᴗ •</span><i class="tear"></i>
+        </div>
+        <button class="soft-next" data-go="profile">前 往</button>
+      </div>
+    </section>
+
+    <section class="page page-profile" data-page="profile" aria-label="第三页">
+      <div class="profile-shell">
+        <button class="nav-arrow back" data-go="meet" aria-label="返回上一步">←</button>
+        <header class="profile-head">
+          <div class="avatar">镜</div>
+          <div><p>intro</p><h1>镜</h1><span>水瓶座</span><span>Le H</span></div>
+        </header>
+
+        <nav class="tabs" aria-label="资料分类">
+          <button class="tab active" data-tab="style"><span>🎮</span><small>风格</small></button>
+          <button class="tab" data-tab="notice"><span>💬</span><small>须知</small></button>
+          <button class="tab" data-tab="docs"><span>💾</span><small>资料</small></button>
+        </nav>
+
+        <div class="panels">
+          <article class="panel active" data-panel="style">
+            <h2>风格</h2>
+            <p>主：钓系温柔甜味高恋温柔引导姐1</p>
+            <p>副风格：流氓狗1/0 / 年下进攻型心机妹妹</p>
+          </article>
+
+          <article class="panel notice-panel" data-panel="notice">
+            <h2>须知</h2>
+            <ul>
+              <li>恋单纯拒男板</li><li>下单默认送单</li><li>单内感情与单外无关</li>
+              <li>取消迟到超10min默认重新另约时间</li><li>约会时长半小时5分钟后不接受退单</li>
+              <li>约会时长一小时10分钟后不接受退单</li><li>请在约会之前填写问卷或者出示板卡</li>
+              <li>拒风格不符/踩雷/精神疾病理由的客诉</li><li>交流习惯默认回合制交流</li>
+              <li>单内风格感受因人而异，除提前说明的特殊单</li><li>禁止不尊重我的下单拿我取乐，否则默认送单</li>
+              <li>新手板接受提前说明，可给予一定的引导安抚</li><li>禁止以任何形式或名义在我未知情的情况下外泄单内话术</li>
+              <li>副风格狗1/0被指定默认接受微高擦特殊单</li><li>提前说明告知，否则婉拒全程抽象单口的</li>
+              <li>下单默认已知悉以上全部</li>
+            </ul>
+            <p class="safe-word">安全词<br><strong>“我们休息吧”</strong></p>
+          </article>
+
+          <article class="panel docs-panel" data-panel="docs">
+            <h2>资料</h2>
+            <a href="https://www.kdocs.cn/l/ckGgXLh5PBph" target="_blank" rel="noopener"><b>个人文档</b><span>打开金山文档 ↗</span></a>
+            <a href="https://www.kdocs.cn/l/cphFITXqAVYb" target="_blank" rel="noopener"><b>板评</b><span>打开金山文档 ↗</span></a>
+            <a href="https://www.kdocs.cn/l/cg3sW9ZDSkvd" target="_blank" rel="noopener"><b>卡类</b><span>打开金山文档 ↗</span></a>
+            <a href="https://www.kdocs.cn/l/cvfGVf8ZVF22" target="_blank" rel="noopener"><b>话术</b><span>打开金山文档 ↗</span></a>
+            <a href="https://163cn.tv/bk0dSd9i" target="_blank" rel="noopener"><b>《我要》</b><span>打开音乐链接 ↗</span></a>
+          </article>
+        </div>
+
+        <div class="bottom-actions">
+          <button id="openBoard">留言板</button><button data-dialog="love">幸会</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="messageModal" aria-hidden="true">
+    <div class="modal-card board-card">
+      <button class="modal-close" aria-label="关闭">×</button><h2>留言板</h2>
+      <div id="messages" class="messages"></div>
+      <form id="messageForm"><input id="messageInput" maxlength="60" placeholder="写下一句话…" required><button>留下</button></form>
+    </div>
+  </div>
+  <div class="modal" id="loveModal" aria-hidden="true">
+    <div class="modal-card love-card">
+      <button class="modal-close" aria-label="关闭">×</button>
+      <div class="pixel-love" role="dialog" aria-label="I LOVE YOU">
+        <div class="pixel-title"><span>♥ ♥ ♡</span><b>×</b></div>
+        <strong>I LOVE YOU</strong>
+        <button class="ok-button">✦ OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+    <div class="glitch-window">
+      <div class="win-title">My Computer <span>×</span></div>
+      <div class="garble" aria-hidden="true">101011010010101<br>█▓▒░ ERROR ░▒▓█<br>001101110010101<br>mirror://unknown</div>
+    </div>
+    <div class="loading-box"><b>LOADING...</b><div class="progress"><i></i></div><strong id="progressText">0%</strong><small>加载进入镜的世界</small></div>
+  </div>
+  <iframe id="neteasePlayer" title="网易云音乐播放器" allow="autoplay" aria-hidden="true"></iframe>
+  <script src="script.js"></script>
+</body>
+</html>
